@@ -20,17 +20,13 @@ A simple file temporary file upload service that allows you to upload files and 
 git clone https://github.com/JMcrafter26/upLoadly.git
 ```
 
-1. Install the dependencies and rename the sqlite database:
+1. Install the dependencies
 
 ```bash
 composer install
 ```
 
-> Rename the sqlite database is only necessary if you want to use a sqlite database.
-
-Rename the file `sample.upLoadly.sqlite3` to `upLoadly.sqlite3`:
-
-1. Add a cron job to delete old files:
+1. Add a cron job to delete old files and run it
 
 > Run cron.php every hour to delete old files.
 
@@ -38,7 +34,9 @@ Rename the file `sample.upLoadly.sqlite3` to `upLoadly.sqlite3`:
 0 * * * * php /path/to/upLoadly/cron.php
 ```
 
-1. Customize and enjoy!
+1. Customize the configuration and run cron.php
+
+> Run cron.php to create the tables in the database.
 
 ## Disclaimer
 
