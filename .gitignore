@@ -3,3 +3,4 @@ vendor
 *.sqlite
 *.sqlite3
 *.db
+!sample.upLoadly.sqlite3
