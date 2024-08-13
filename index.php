@@ -12,7 +12,7 @@ session_start();
 		die("DB Connection failed: " . $e->getMessage());
 	}
 
-$maxFilesizeBytes = $config['max_filesize'] * 1048576;
+$maxFilesizeBytes = $config['max_filesize'] * 1024 * 1024;
 
 
 if(isset($_POST["upload"]) && $_POST['upload'] == true) {
@@ -46,7 +46,7 @@ if(isset($_POST["upload"]) && $_POST['upload'] == true) {
 		$upload->withTargetFilename(pathinfo($file['name'], PATHINFO_FILENAME));
 		
 		$upload->withTargetDirectory($config['upload_path'] . '/' . $rand . '/');
-		$upload->withMaximumSizeInMegabytes($config['max_filesize']);
+		// $upload->withMaximumSizeInMegabytes($config['max_filesize']); // !FIXME: This is not working
 		
 		try {
 			$uploadedFile = $upload->save();
