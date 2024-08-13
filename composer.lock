@@ -1,0 +1,62 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "1c166a4fdfb2060b6126bad9a5c5f597",
+    "packages": [
+        {
+            "name": "delight-im/file-upload",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/delight-im/PHP-FileUpload.git",
+                "reference": "a793f4b9d6d2fc4ce57487c324a1547cce942cb6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/delight-im/PHP-FileUpload/zipball/a793f4b9d6d2fc4ce57487c324a1547cce942cb6",
+                "reference": "a793f4b9d6d2fc4ce57487c324a1547cce942cb6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Delight\\FileUpload\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Simple and convenient file uploads — secure by default",
+            "homepage": "https://github.com/delight-im/PHP-FileUpload",
+            "keywords": [
+                "file",
+                "files",
+                "form",
+                "input",
+                "upload",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/delight-im/PHP-FileUpload/issues",
+                "source": "https://github.com/delight-im/PHP-FileUpload/tree/v1.2.0"
+            },
+            "time": "2018-03-13T18:36:56+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

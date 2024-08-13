@@ -1,0 +1,81 @@
+.container {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.alert {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.success {
+    color: #3fb950;
+    border-color: #3fb950;
+}
+
+.error {
+    color: #f85149;
+    border-color: #f85149;
+}
+
+.warning {
+    color: #fedd48;
+    border-color: #fedd48;
+}
+
+.preview {
+    width: 80%;
+    max-width: 400px;
+    height: auto; /* Maintains aspect ratio */
+    max-height: 400px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    object-fit: contain; /* Ensures the image fits within the bounding box */
+}
+
+.button {
+    color: #1d1d1d;
+    color: var(--form-text);
+    background-color: #efefef;
+    background-color: var(--background);
+    font-family: inherit;
+    font-size: inherit;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none
+}
+
+@media (prefers-color-scheme:dark) {
+    .button {
+        background-color: #161f27;
+        background-color: var(--background)
+    }
+}
+
+@media (prefers-color-scheme:dark) {
+    .button {
+        color: #fff;
+        color: var(--form-text)
+    }
+}
+
+.filepond--panel-root {
+    padding-bottom: 40px;
+    background-color: var(--background);
+}
+
+.filepond--drop-label {
+    color: var(--gext-main);
+}
+
+.filepond--item-panel {
+    background-color: var(--selection);
+}

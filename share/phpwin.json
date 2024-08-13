@@ -1,0 +1,10 @@
+{
+    "rules": [
+        {
+            "condition": "!f !d",
+            "match":"^(.*)$",
+            "target": "index.php",
+            "query": "url=$1"
+        }
+    ]
+}

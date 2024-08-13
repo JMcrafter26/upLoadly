@@ -1,0 +1,5 @@
+{
+    "require": {
+        "delight-im/file-upload": "^1.2"
+    }
+}
